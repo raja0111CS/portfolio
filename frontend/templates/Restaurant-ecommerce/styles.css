@@ -1,0 +1,73 @@
+/* Custom Styles */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-body {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#cart-items li .item-name {
+  font-weight: bold;
+}
+
+#cart-items {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.add-to-cart i {
+  margin-right: 5px;
+}
+
+.hero {
+  background: url('images/hero-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}

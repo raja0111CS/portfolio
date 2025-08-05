@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Raja Kumar</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome CSS (CDN) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/web_services.css">
+</head>
+
+<body>
+
+    <!-- Header Section with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <div class="container-fluid">
+                <img src="images/profile-img.png" alt="profile-image" class="rounded-circle"
+                    style="width: 50px; height: 50px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                        <div class="dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Upcoming!">App Development</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="dropdown-item mt-n3">Upcoming here...</li>
+                                </ul>
+                            </li>
+                        </div>
+                        <li class="nav-item">
+                            <a class="btn btn-primary active" href="payment.html"
+                                style="Background: purple;">Payment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Web Development Section -->
+    <div class="container-xxl py-5">
+        <div class="row justify-content-center" id="web_services">
+            <p class="col-12 col-md-8 text-center">Hello, I’m Raja Kumar, a full-stack web developer with expertise in
+                building dynamic and scalable applications. I work with a wide range of technologies including HTML,
+                CSS, JavaScript, jQuery, Bootstrap for the front-end, and Express, MongoDB, and Node.js for the
+                back-end. My goal is to create seamless, responsive user interfaces that integrate smoothly with
+                powerful back-end systems.</p>
+        </div>
+        <div class="card">
+            <p class="card-body text-center">Ready to bring your project to life? Let's work together!</p>
+            <button class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#contactModal">Click here to get
+                started <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Lock Icon and Upcoming Text Section -->
+    <div class="container-xxl py-3 upcoming-container mt-5">
+        <i class="fas fa-lock"></i>
+        <p class="h5">App Development is Upcoming (Android/iOS)</p>
+    </div>
+
+    <!-- App Development Section with Blur (Upcoming Service) -->
+    <div class="container-xxl py-5" id="app_services" style="filter: blur(5px); pointer-events: none;">
+        <div class="row justify-content-center">
+            <p class="col-12 col-md-8 text-center">Hi, I’m a skilled app developer with experience in building both
+                mobile and web applications. I specialize in creating intuitive, user-friendly apps that deliver
+                seamless experiences on iOS, Android, and the web. Whether you need a new app from scratch or want to
+                improve an existing one, I’m dedicated to developing custom solutions that meet your business goals.</p>
+        </div>
+        <div class="card">
+            <p class="card-body text-center">Ready to bring your project to life? Let's work together!</p>
+            <button class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#contactModal">Click here to get
+                started <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Modal for Customer Details -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Fill in Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter your name" minlength="2" maxlength="100"
+                                required aria-required="true">
+                            <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="projectDetails" class="form-label">Project Details</label>
+                            <textarea class="form-control" id="projectDetails" rows="4" maxlength="2000"
+                                placeholder="Describe your project" required aria-required="true"></textarea>
+                            <div class="invalid-feedback" id="projectError">Please provide details of your project.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" minlength="10" maxlength="75" placeholder="Enter your email" required
+                                aria-required="true">
+                            <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                required aria-required="true" maxlength="10" pattern="^\d{10}$">
+                            <div class="invalid-feedback" id="phoneError">Please enter a valid 10-digit phone number.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (Bootstrap 5.3.3, no jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="js/web_services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+/* Base Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container-xxl {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header Styling */
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Payment Option Section Styling */
+.payment-option {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Checkbox & Label Styling */
+.payment-option .form-check-input {
+    margin-right: 10px;
+}
+
+.payment-option .form-check-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Card and UPI Details Section */
+.card-details,
+.upi-details {
+    display: none;
+}
+
+/* Input, Select, and Button Styling */
+.payment-option select,
+.payment-option button {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Button Styling */
+.payment-option button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-option button:hover {
+    background-color: #218838;
+}
+
+/* QR Code Container */
+.qr-container img {
+    max-width: 71%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 760px) {
+    .container-xxl {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .row{display: block !important;}
+
+    /* Layout Adjustment */
+    .col-md-8, .col-md-4 {
+        max-width: 100%;
+        flex: 1;
+    }
+
+    /* QR Code Adjustments */
+    .qr-container {
+        text-align: center;
+    }
+
+    /* Adjust Heading Font Size for Smaller Screens */
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    /* Ensure Inputs & Buttons are Full Width */
+    .payment-option select,
+    .payment-option button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .row{display: block !important;}
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .payment-option input,
+    .payment-option select {
+        font-size: 0.9rem;
+    }
+}
+
